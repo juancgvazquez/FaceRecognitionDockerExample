@@ -130,8 +130,8 @@ while True:
 
         # encuentra el máximo indice
         max_index = np.argmax(predictions[0])
-        emotions = ('enojado', 'enojado', 'neutral', 'feliz',
-                    'neutral', 'sorprendido', 'neutral')
+        emotions = ('enojado', 'disgustado', 'miedo',
+                    'feliz', 'triste', 'sorprendido', 'neutral')
         emotion = emotions[max_index]
         text = "{}: {}%".format(
             emotion, int(predictions[0][max_index]*100))
